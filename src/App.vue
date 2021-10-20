@@ -1,22 +1,32 @@
 <template>
-  <div id="nav">
-    <router-link to="/" tag="div" class="welcome">Cool Style Stuff</router-link>
-    <router-link to="/about">
-      <button class="nav-button">
-        <mdicon name="information" size="25" />
-      </button>
-    </router-link>
-    <router-link to="/drawing-board">
-      <button class="nav-button">
-        <mdicon name="draw" size="25" />
-      </button>
-    </router-link>
+  <div>
+    <div id="nav">
+      <router-link to="/" tag="div" class="welcome"
+        ><span>Cool Styles</span>
+      </router-link>
+      <router-link to="/about">
+        <button class="nav-button">
+          <mdicon name="information" size="34" />
+        </button>
+      </router-link>
+      <router-link to="/drawing-board">
+        <button class="nav-button">
+          <mdicon name="draw" size="34" />
+        </button>
+      </router-link>
+    </div>
+    <!-- <div> -->
+    <router-view v-slot="{ Component, route }">
+      <transition :name="route.meta.transition">
+        <component :is="Component" />
+      </transition>
+    </router-view>
+    <!-- </div> -->
   </div>
-  <router-view />
 </template>
-
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 
 .nav-button {
   border: none;
@@ -25,6 +35,7 @@
   cursor: pointer;
   background: transparent;
   margin-right: 10px;
+  margin: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -35,7 +46,17 @@
   flex: 1;
   text-align: left;
   font-weight: 200;
-  padding: 5px;
+  margin: auto;
+  padding-left: 10px;
+  color: #2c3e50;
+  font-family: "Architects Daughter", cursive;
+  font-size: 1.5rem;
+}
+.welcome span {
+  color: #2c3e50;
+}
+html {
+  overflow-y: scroll;
 }
 html,
 body,
@@ -126,6 +147,7 @@ video {
   vertical-align: baseline;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 #app {
@@ -140,18 +162,24 @@ video {
 #nav {
   background: #f5f5f5;
   padding: 0.25%;
+  padding-left: 20px;
+  padding-right: 20px;
   font-size: 1.1rem;
   border-bottom: 2px dashed white;
   display: flex;
+  height: 40px;
+  text-justify: center;
 }
 
 #nav a {
   font-weight: bold;
   color: #2c3e50;
+  margin: auto;
+  margin-right: 10px;
 }
 
 #nav a.router-link-exact-active {
-  font-weight: bolder;
-  color: #ca3328;
+  text-decoration: underline;
+  /* color: #ca3328; */
 }
 </style>

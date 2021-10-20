@@ -42,7 +42,7 @@ export default {
   justify-content: center;
 }
 #bg {
-  background: #ffffea;
+  background: #fdedd4;
   /* background: linear-gradient(to left, #fffd86, #a0a0ff); */
 }
 .drawing {

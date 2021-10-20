@@ -1,13 +1,15 @@
 <template>
-  <div
-    v-for="(drawing, index) in drawings"
-    :key="index"
-    :class="drawing.class"
-    @mouseover="drawing.showTitle = true"
-    @mouseleave="drawing.showTitle = false"
-  >
-    <div v-if="drawing.showTitle" class="title">{{ drawing.title }}</div>
-    <component :is="drawing.component"></component>
+  <div>
+    <div
+      v-for="(drawing, index) in drawings"
+      :key="index"
+      :class="drawing.class"
+      @mouseover="drawing.showTitle = true"
+      @mouseleave="drawing.showTitle = false"
+    >
+      <div v-if="drawing.showTitle" class="title">{{ drawing.title }}</div>
+      <component :is="drawing.component"></component>
+    </div>
   </div>
 </template>
 

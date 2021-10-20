@@ -24,8 +24,8 @@ export default {
 }
 .sharp {
   position: relative;
-  height: 220px;
-  width: 220px;
+  width: 40%;
+  padding-bottom: 40%;
   left: -5%;
   top: -5%;
   background: transparent;
