@@ -7,7 +7,10 @@
       @mouseover="drawing.showTitle = true"
       @mouseleave="drawing.showTitle = false"
     >
-      <div v-if="drawing.showTitle" class="title">{{ drawing.title }}</div>
+      <div v-if="drawing.showTitle" class="title">
+        <p>{{ drawing.title }}</p>
+        <p>{{ drawing.date }}</p>
+      </div>
       <component :is="drawing.component"></component>
     </div>
   </div>
@@ -32,7 +35,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .title {
   position: absolute;
   padding: 5px;
@@ -61,6 +64,7 @@ export default {
   min-height: 400px;
   position: relative;
   display: flex;
+  overflow: hidden;
 }
 .entry-wide {
   text-align: center;

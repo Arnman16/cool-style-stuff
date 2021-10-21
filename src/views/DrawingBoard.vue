@@ -3,14 +3,12 @@
     <div class="entry-wide">
       <component :is="drawing"></component>
     </div>
-    <div v-if="0">
-      <div
-        v-for="(drawing, index) in drawings"
-        :key="index"
-        :class="drawing.class"
-      >
-        <component :is="drawing.component"></component>
-      </div>
+    <div
+      v-for="(drawing, index) in drawings"
+      :key="index"
+      :class="drawing.class"
+    >
+      <component :is="drawing.component"></component>
     </div>
   </div>
 </template>
@@ -66,5 +64,6 @@ export default {
   position: relative;
   display: flex;
   width: 100%;
+  overflow: hidden;
 }
 </style>

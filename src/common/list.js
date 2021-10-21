@@ -6,14 +6,30 @@ import Sharp from "@/components/Sharp.vue";
 import Mario from "@/components/Mario.vue";
 import Luigi from "@/components/Luigi.vue";
 import Keystep from "@/components/Keystep.vue";
+import GullDagger from "@/components/GullDagger.vue";
+import SquidGame from "@/components/SquidGame.vue";
 const drawing = markRaw(Drawing);
 const list = [
   {
-    component: markRaw(Keystep),
-    title: "Keystep",
+    component: markRaw(SquidGame),
+    title: "Squid Game",
     class: "entry-wide",
     comment: "",
-    date: "2021-10-19",
+    date: "2021-10-21",
+  },
+  {
+    component: markRaw(GullDagger),
+    title: "Gull Dagger",
+    class: "entry",
+    comment: "",
+    date: "2021-10-21",
+  },
+  {
+    component: markRaw(Keystep),
+    title: "Keystep",
+    class: "entry",
+    comment: "",
+    date: "2021-10-20",
   },
   {
     component: markRaw(Mario),

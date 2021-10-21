@@ -1,28 +1,26 @@
 <template>
-  <div>
-    <div id="nav">
-      <router-link to="/" tag="div" class="welcome"
-        ><span>Cool Styles</span>
-      </router-link>
-      <router-link to="/about">
-        <button class="nav-button">
-          <mdicon name="information" size="34" />
-        </button>
-      </router-link>
-      <router-link to="/drawing-board">
-        <button class="nav-button">
-          <mdicon name="draw" size="34" />
-        </button>
-      </router-link>
-    </div>
-    <!-- <div> -->
-    <router-view v-slot="{ Component, route }">
-      <transition :name="route.meta.transition">
-        <component :is="Component" />
-      </transition>
-    </router-view>
-    <!-- </div> -->
+  <div id="nav">
+    <router-link to="/" tag="div" class="welcome"
+      ><span>Cool Styles</span>
+    </router-link>
+    <router-link to="/about">
+      <button class="nav-button">
+        <mdicon name="information" size="34" />
+      </button>
+    </router-link>
+    <router-link v-if="0" to="/drawing-board">
+      <button class="nav-button">
+        <mdicon name="draw" size="34" />
+      </button>
+    </router-link>
   </div>
+  <!-- <div> -->
+  <router-view v-slot="{ Component, route }">
+    <transition :name="route.meta.transition">
+      <component :is="Component" />
+    </transition>
+  </router-view>
+  <!-- </div> -->
 </template>
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
@@ -38,6 +36,9 @@
   margin: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.full-page {
+  height: 100%;
 }
 .nav-button:hover {
   background: rgb(228, 228, 228);
@@ -65,12 +66,6 @@ span,
 applet,
 object,
 iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p,
 blockquote,
 pre,
@@ -149,7 +144,9 @@ video {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
-
+body {
+  height: 100%;
+}
 #app {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
