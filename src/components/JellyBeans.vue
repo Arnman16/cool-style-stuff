@@ -78,17 +78,18 @@ export default {
   width: 32px;
   height: 52px;
   background: linear-gradient(
-    #ddd7 0%,
+    rgba(117, 117, 117, 0.589) 0%,
     #282635 50%,
     #ded 50%,
     #bbb 52%,
     #222 52%,
-    #282635 100%
+    #302e3b 100%
   );
   border: 4px solid #ded;
   margin: 10px;
-  filter: drop-shadow(0 0.4vmin rgba(0, 0, 0, 0.171))
+  filter: drop-shadow(0 0.4vmin rgba(0, 0, 0, 0.08))
     drop-shadow(0 0.7vmin rgba(59, 59, 59, 0.1));
+  box-shadow: inset 0 -13px 10px 2px #2f2d3a8c;
 }
 .door-1,
 .door-2,
