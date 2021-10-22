@@ -8,12 +8,20 @@ import Luigi from "@/components/Luigi.vue";
 import Keystep from "@/components/Keystep.vue";
 import GullDagger from "@/components/GullDagger.vue";
 import SquidGame from "@/components/SquidGame.vue";
+import JellyBeans from "@/components/JellyBeans.vue";
 const drawing = markRaw(Drawing);
 const list = [
   {
+    component: markRaw(JellyBeans),
+    title: "Jelly Beans",
+    class: "entry-wide",
+    comment: "",
+    date: "2021-10-22",
+  },
+  {
     component: markRaw(SquidGame),
     title: "Squid Game",
-    class: "entry-wide",
+    class: "entry",
     comment: "",
     date: "2021-10-21",
   },
@@ -27,7 +35,7 @@ const list = [
   {
     component: markRaw(Keystep),
     title: "Keystep",
-    class: "entry",
+    class: "entry-wide",
     comment: "",
     date: "2021-10-20",
   },

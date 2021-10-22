@@ -59,6 +59,7 @@ export default {
     drop-shadow(0 1.25vmin rgba(128, 128, 128, 0.3));
 }
 .house-1 {
+  border-right: 5px solid #cddbcd;
   background: var(--house1)
     repeating-linear-gradient(#0000 0px, #00000008 7px, #0001 8px);
 }
@@ -68,6 +69,7 @@ export default {
   transform: translateY(3px);
 }
 .house-3 {
+  border-left: 5px solid #cddbcd;
   background: var(--house3)
     repeating-linear-gradient(#0000 0px, #00000008 7px, #0001 8px);
 }

@@ -5,7 +5,7 @@
     </router-link>
     <router-link to="/about">
       <button class="nav-button">
-        <mdicon name="information" size="34" />
+        <mdicon name="information-outline" size="34" />
       </button>
     </router-link>
     <router-link v-if="0" to="/drawing-board">
