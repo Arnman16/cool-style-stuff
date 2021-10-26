@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div class="entry-wide">
+    <div class="entry">
+      <component :is="drawing"></component>
+    </div>
+    <div class="entry">
       <component :is="drawing"></component>
     </div>
     <div

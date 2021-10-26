@@ -128,7 +128,7 @@ export default {
   width: 130px;
   height: 60px;
   box-shadow: inset 0 4px rgba(161, 161, 161, 0.109), 0 2px #111;
-  background: #111
+  background: #191919
     repeating-linear-gradient(
       #0000 0px,
       #6b6b6b08 3px,
@@ -140,7 +140,7 @@ export default {
 }
 .roof-2 {
   transform: translateY(3px);
-  background: #222
+  background: #111
     repeating-linear-gradient(
       #0000 0px,
       #6b6b6b08 3px,

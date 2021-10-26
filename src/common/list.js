@@ -9,12 +9,20 @@ import Keystep from "@/components/Keystep.vue";
 import GullDagger from "@/components/GullDagger.vue";
 import SquidGame from "@/components/SquidGame.vue";
 import JellyBeans from "@/components/JellyBeans.vue";
+import Jack from "@/components/Jack.vue";
 const drawing = markRaw(Drawing);
 const list = [
   {
+    component: markRaw(Jack),
+    title: "Jack",
+    class: "entry",
+    comment: "",
+    date: "2021-10-26",
+  },
+  {
     component: markRaw(JellyBeans),
     title: "Jelly Beans",
-    class: "entry-wide",
+    class: "entry",
     comment: "",
     date: "2021-10-22",
   },

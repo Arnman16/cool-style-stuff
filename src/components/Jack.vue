@@ -20,7 +20,7 @@
 #bg {
   --line: #774d47;
   --line-darker: #664540;
-  --pumpkin-light: #ffa43c69;
+  --pumpkin-light: #ffa43c48;
   --pumpkin: #ea7f37;
   --pumpkin-dark: #b6632b69;
   --bg1: #fae9be;
@@ -40,11 +40,11 @@
       var(--pumpkin-light) 30px,
       var(--pumpkin-dark) 60px
     );
-  box-shadow: inset 36px -10px 10px 3px var(--pumpkin-dark),
-    inset -36px -10px 10px 3px var(--pumpkin-dark);
+  box-shadow: inset 36px -10px 15px 3px var(--pumpkin-dark),
+    inset -36px -10px 15px 3px var(--pumpkin-dark),
+    inset 0px 10px 15px 10px var(--pumpkin-dark), 0px 14px 15px #3334;
   border: 6px solid var(--line);
-  filter: drop-shadow(0 0.5vmin rgba(0, 0, 0, 0.171))
-    drop-shadow(0 1vmin rgba(128, 128, 128, 0.3));
+  position: relative;
 }
 .mouth {
   position: absolute;
