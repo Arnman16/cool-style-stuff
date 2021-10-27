@@ -1,9 +1,12 @@
 <template>
   <div>
-    <div class="entry">
+    <div class="entry-33">
       <component :is="drawing"></component>
     </div>
-    <div class="entry">
+    <div class="entry-33">
+      <component :is="drawing"></component>
+    </div>
+    <div class="entry-33">
       <component :is="drawing"></component>
     </div>
     <div

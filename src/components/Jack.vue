@@ -54,7 +54,7 @@
   border-radius: 50%;
   top: 130px;
   left: 50px;
-  box-shadow: inset 0px -5px var(--hole-light), inset 0px -28px var(--hole);
+  box-shadow: inset 0px -5px 2px var(--hole-light), inset 0px -28px var(--hole);
 }
 .eye {
   position: absolute;
@@ -64,12 +64,12 @@
   border-radius: 50%;
   top: 110px;
   left: 70px;
-  box-shadow: inset 1px -5px var(--hole-light), inset 0px -20px var(--hole);
+  box-shadow: inset 1px -5px 2px var(--hole-light), inset 0px -20px var(--hole);
   transform: rotate(-15deg);
 }
 .eye + .eye {
   left: 180px;
-  box-shadow: inset -1px -5px var(--hole-light), inset 0px -20px var(--hole);
+  box-shadow: inset -1px -5px 2px var(--hole-light), inset 0px -20px var(--hole);
   transform: rotate(15deg);
 }
 .stem {

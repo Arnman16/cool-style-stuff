@@ -18,7 +18,7 @@
   --bottom: 50%;
   --left: 50%;
   --scale: 1.5;
-  --bg1: #fff;
+  --bg1: #d7d7d733;
   --bg2: #fff;
   --wood-1: #8a6424;
   --wood-2: #66491c;
@@ -28,10 +28,16 @@
   --blade-2: #c1c1c1;
   --blade-3: #444444;
   --blade-4: #181818;
-  background: linear-gradient(var(--bg1) 0%, var(--bg2) 100%);
+  background: var(--bg1);
   /* GRID */
   /* background: repeating-linear-gradient(#0004 0px, #0000 1px, #0000 25px),
     repeating-linear-gradient(90deg, #0004 0px, #0000 1px, #0000 25px); */
+}
+.pickaxe,
+.blade-left,
+.blade-right {
+  filter: drop-shadow(0 0.5vmin rgba(0, 0, 0, 0.05))
+    drop-shadow(0 0.83vmin rgba(128, 128, 128, 0.04));
 }
 .pickaxe {
   display: block;

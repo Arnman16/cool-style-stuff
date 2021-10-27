@@ -18,20 +18,27 @@
   --bottom: 50%;
   --left: 50%;
   --scale: 1.5;
-  --bg1: #fff;
+  --bg1: #feffb233;
   --bg2: #fff;
   --wood-1: #8a6424;
   --wood-2: #66491c;
   --wood-3: #463015;
   --wood-4: #291c0c;
-  --blade-1: #d7d7d7;
-  --blade-2: #c1c1c1;
-  --blade-3: #444444;
-  --blade-4: #181818;
-  background: linear-gradient(var(--bg1) 0%, var(--bg2) 100%);
+  --blade-0: #feff77;
+  --blade-1: #ecef5b;
+  --blade-2: #e9b017;
+  --blade-3: #815d15;
+  --blade-4: #402e0d;
+  background: var(--bg1);
   /* GRID */
   /* background: repeating-linear-gradient(#0004 0px, #0000 1px, #0000 25px),
     repeating-linear-gradient(90deg, #0004 0px, #0000 1px, #0000 25px); */
+}
+.pickaxe,
+.blade-left,
+.blade-right {
+  filter: drop-shadow(0 0.5vmin rgba(0, 0, 0, 0.05))
+    drop-shadow(0 0.83vmin rgba(128, 128, 128, 0.04));
 }
 .pickaxe {
   display: block;
@@ -66,7 +73,7 @@
   transform: scale(var(--scale)) translate(35px, 35px);
   background: transparent;
   color: var(--blade-4);
-  box-shadow: 10px 0px, 0 -10px, 10px -10px white, 20px -10px, 0 -20px,
+  box-shadow: 10px 0px, 0 -10px, 10px -10px var(--blade-0), 20px -10px, 0 -20px,
     10px -20px var(--blade-1), 20px -20px, 0 -30px, 10px -30px var(--blade-2),
     20px -30px, 0 -40px, 10px -40px var(--blade-2), 20px -40px,
     0 -50px var(--blade-2), 10px -50px var(--blade-1), 20px -50px, 10px -60px;
@@ -80,9 +87,10 @@
   left: var(--left);
   transform: scale(var(--scale)) translate(-35px, -55px);
   color: var(--blade-3);
-  box-shadow: 10px 0, 20px 0, 30px 0, 40px 0, 50px 0, 0 10px, 10px 10px white,
-    20px 10px var(--blade-1), 30px 10px var(--blade-2), 40px 10px var(--blade-2),
-    50px 10px var(--blade-1), 60px 10px, 10px 20px, 20px 20px var(--blade-4),
-    30px 20px var(--blade-4), 40px 20px var(--blade-4), 50px 20px var(--blade-2);
+  box-shadow: 10px 0, 20px 0, 30px 0, 40px 0, 50px 0, 0 10px,
+    10px 10px var(--blade-0), 20px 10px var(--blade-1), 30px 10px var(--blade-2),
+    40px 10px var(--blade-2), 50px 10px var(--blade-1), 60px 10px, 10px 20px,
+    20px 20px var(--blade-4), 30px 20px var(--blade-4), 40px 20px var(--blade-4),
+    50px 20px var(--blade-2);
 }
 </style>

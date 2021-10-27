@@ -10,8 +10,32 @@ import GullDagger from "@/components/GullDagger.vue";
 import SquidGame from "@/components/SquidGame.vue";
 import JellyBeans from "@/components/JellyBeans.vue";
 import Jack from "@/components/Jack.vue";
+import PickaxeIron from "@/components/PickaxeIron.vue";
+import PickaxeGold from "@/components/PickaxeGold.vue";
+import PickaxeDiamond from "@/components/PickaxeDiamond.vue";
 const drawing = markRaw(Drawing);
 const list = [
+  {
+    component: markRaw(PickaxeIron),
+    title: "Iron",
+    class: "entry-33",
+    comment: "",
+    date: "2021-10-27",
+  },
+  {
+    component: markRaw(PickaxeGold),
+    title: "Gold",
+    class: "entry-33",
+    comment: "",
+    date: "2021-10-27",
+  },
+  {
+    component: markRaw(PickaxeDiamond),
+    title: "Diamond",
+    class: "entry-33",
+    comment: "",
+    date: "2021-10-27",
+  },
   {
     component: markRaw(Jack),
     title: "Jack",
