@@ -18,7 +18,7 @@
   --bottom: 50%;
   --left: 50%;
   --scale: 1.5;
-  --bg1: #d7d7d733;
+  --bg1: #f0f0f0;
   --bg2: #fff;
   --wood-1: #8a6424;
   --wood-2: #66491c;
