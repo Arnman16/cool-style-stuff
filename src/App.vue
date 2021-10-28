@@ -1,11 +1,12 @@
 <template>
   <div id="nav">
     <router-link to="/" tag="div" class="welcome"
-      ><span>Cool Styles</span>
+      ><div class="logo">CoolStyles</div>
+      <div class="blurb">CSS art by Aaron Noseworthy</div>
     </router-link>
     <router-link to="/about">
       <button class="nav-button">
-        <mdicon name="information-outline" size="34" />
+        <mdicon name="information-outline" :size="35" />
       </button>
     </router-link>
     <router-link v-if="0" to="/drawing-board">
@@ -23,8 +24,7 @@
   <!-- </div> -->
 </template>
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Pacifico&family=Roboto&&display=swap");
 
 .nav-button {
   border: none;
@@ -32,6 +32,7 @@
   border-radius: 50%;
   cursor: pointer;
   background: transparent;
+  color: #fef;
   margin-right: 10px;
   margin: auto;
   -webkit-font-smoothing: antialiased;
@@ -41,7 +42,7 @@
   height: 100%;
 }
 .nav-button:hover {
-  background: rgb(228, 228, 228);
+  background: rgba(228, 228, 228, 0.109);
 }
 .welcome {
   flex: 1;
@@ -58,6 +59,12 @@
 }
 html {
   overflow-y: scroll;
+  background: #111;
+  color: #eee;
+}
+a {
+  color: #99a;
+  text-shadow: 0 1px #a8a8a867;
 }
 html,
 body,
@@ -147,36 +154,53 @@ video {
 body {
   height: 100%;
 }
+.logo {
+  position: relative;
+  bottom: 2px;
+  font-family: "Pacifico", cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 22px;
+  color: #fef;
+  font-weight: 400;
+  text-shadow: 0 1px #00000067;
+}
+.blurb {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  bottom: 7px;
+  text-decoration: none;
+  color: #b8cbf1;
+  text-shadow: 0 1px #00000067;
+}
+#nav a.router-link-exact-active .logo {
+  text-decoration: underline;
+}
 #app {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   height: 100%;
 }
 
 #nav {
-  background: #f5f5f5;
-  padding: 0.25%;
-  padding-left: 20px;
-  padding-right: 20px;
+  background: #111;
+  /* padding: 0.25%; */
+  padding-left: 1vmin;
+  padding-right: 1vmin;
   font-size: 1.1rem;
-  border-bottom: 2px dashed white;
   display: flex;
-  height: 40px;
+  height: 53px;
   text-justify: center;
+  overflow: hidden;
 }
 
 #nav a {
-  font-weight: bold;
-  color: #2c3e50;
   margin: auto;
   margin-right: 10px;
-}
-
-#nav a.router-link-exact-active {
-  text-decoration: underline;
-  /* color: #ca3328; */
 }
 </style>
