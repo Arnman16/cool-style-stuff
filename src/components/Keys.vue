@@ -200,7 +200,7 @@ export default {
   /* background: black; */
 }
 .drawing + .drawing {
-  transform: rotate(180deg);
+  transform: scaleY(-1);
   top: 20%;
 }
 .key-l {
