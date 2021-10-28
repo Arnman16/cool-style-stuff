@@ -1,12 +1,6 @@
 <template>
   <div>
-    <div class="entry-33">
-      <component :is="drawing"></component>
-    </div>
-    <div class="entry-33">
-      <component :is="drawing"></component>
-    </div>
-    <div class="entry-33">
+    <div class="entry-wide">
       <component :is="drawing"></component>
     </div>
     <div

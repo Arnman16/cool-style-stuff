@@ -179,6 +179,9 @@ body {
 #nav a.router-link-exact-active .logo {
   text-decoration: underline;
 }
+#nav a.router-link-active {
+  background: none;
+}
 #app {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;

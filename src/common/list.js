@@ -13,8 +13,16 @@ import Jack from "@/components/Jack.vue";
 import PickaxeIron from "@/components/PickaxeIron.vue";
 import PickaxeGold from "@/components/PickaxeGold.vue";
 import PickaxeDiamond from "@/components/PickaxeDiamond.vue";
+import Keys from "@/components/Keys.vue";
 const drawing = markRaw(Drawing);
 const list = [
+  {
+    component: markRaw(Keys),
+    title: "Keys",
+    class: "entry-wide",
+    comment: "",
+    date: "2021-10-27",
+  },
   {
     component: markRaw(PickaxeIron),
     title: "Iron",

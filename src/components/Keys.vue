@@ -181,9 +181,8 @@ export default {
     var(--color-2) 50%,
     var(--color-2)
   );
-  transition: background, 1.3s;
 }
-#bg:hover {
+/* #bg:hover {
   background: linear-gradient(
     0deg,
     var(--color-3) 0%,
@@ -191,7 +190,7 @@ export default {
     var(--color-4) 50%,
     var(--color-4)
   );
-}
+} */
 .drawing {
   position: relative;
   height: 40%;
