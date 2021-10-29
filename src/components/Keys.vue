@@ -170,10 +170,10 @@ export default {
   /* justify-content: center; */
 }
 #bg {
-  --color-1: #fff;
-  --color-2: #000000;
-  --color-3: #e4ff00;
-  --color-4: #ff00ff;
+  /* --color-1: #000;
+  --color-2: #fff; */
+  --color-1: #d6ff00;
+  --color-2: #7f3fbf;
   background: linear-gradient(
     0deg,
     var(--color-1) 0%,
@@ -193,21 +193,24 @@ export default {
 } */
 .drawing {
   position: relative;
-  height: 40%;
+  height: 30%;
   width: 100%;
   color: white;
   overflow: hidden;
+  transform: scaleX(1.06) scaleY(-1);
+  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+  top: 20%;
   /* background: black; */
 }
 .drawing + .drawing {
-  transform: scaleY(-1);
-  top: 20%;
+  transform: scaleX(1.06);
+  /* top: 20%; */
 }
 .key-l {
   display: inline-block;
-  width: 32px;
+  width: 30px;
   height: 100%;
-  margin: 0 0.1% 0 0.1%;
+  margin: 0 1px 0 1px;
   clip-path: polygon(
     0 0,
     70% 0,
@@ -223,9 +226,9 @@ export default {
 
 .key-r {
   display: inline-block;
-  width: 32px;
+  width: 30px;
   height: 100%;
-  margin: 0 0.1% 0 0.1%;
+  margin: 0 1px 0 1px;
   clip-path: polygon(
     30% 0,
     100% 0,
@@ -242,9 +245,9 @@ export default {
 
 .key-m {
   display: inline-block;
-  width: 32px;
+  width: 30px;
   height: 100%;
-  margin: 0 0.1% 0 0.1%;
+  margin: 0 1px 0 1px;
   clip-path: polygon(
     30% 0,
     70% 0,
