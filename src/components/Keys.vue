@@ -197,18 +197,18 @@ export default {
   width: 100%;
   color: white;
   overflow: hidden;
-  transform: scaleX(1.06) scaleY(-1);
+  transform: scaleX(1.1) scaleY(-1);
   filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
   top: 20%;
   /* background: black; */
 }
 .drawing + .drawing {
-  transform: scaleX(1.06);
+  transform: scaleX(1.1);
   /* top: 20%; */
 }
 .key-l {
   display: inline-block;
-  width: 30px;
+  width: 25px;
   height: 100%;
   margin: 0 1px 0 1px;
   clip-path: polygon(
@@ -226,7 +226,7 @@ export default {
 
 .key-r {
   display: inline-block;
-  width: 30px;
+  width: 25px;
   height: 100%;
   margin: 0 1px 0 1px;
   clip-path: polygon(
@@ -245,7 +245,7 @@ export default {
 
 .key-m {
   display: inline-block;
-  width: 30px;
+  width: 25px;
   height: 100%;
   margin: 0 1px 0 1px;
   clip-path: polygon(
